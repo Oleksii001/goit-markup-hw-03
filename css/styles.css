@@ -95,7 +95,6 @@ font-family: 'Raleway';
 .page-header-container {
 display: flex;
 align-items: center;
-justify-content: space-between;
 }
 .header-navi {
         display: flex;
@@ -129,6 +128,7 @@ color: var(--btn-bg-color-active);
 }
 
 .adress {
+        margin-left: auto;
         
 }
 
@@ -136,7 +136,9 @@ color: var(--btn-bg-color-active);
         display: flex;
 }
 
-.header-item-adress {
+.header-item-adress:not(:last-child) {
+        margin-right: 40px;
+
 
 
 }
@@ -148,10 +150,7 @@ color: var(--btn-bg-color-active);
         font-size: 16px;
         line-height: 1.5;    
         letter-spacing: 0.02em;
-        color: var(--second-text-color);
-        margin-left: auto;
-        margin-right: 40px;
-        
+        color: var(--second-text-color);        
 }
 .contact-adress-link:hover, 
 .contact-adress-link:focus {
@@ -161,14 +160,15 @@ color: var(--btn-bg-color-active);
 /* -------------------------website list-------------------- */
 
 .main-section {
-
+padding-top: 96px;
+padding-bottom: 120px;
 }
 
 
 .main-section-list {
         display: flex;
         justify-content: center;
-        padding-bottom:72px ;
+        margin-bottom:72px ;
 
 
 }
@@ -248,13 +248,6 @@ color: var(--btn-bg-color-active);
         padding-bottom: 188px;
 }
 
-.hero-title-position{
-width: 496px;
-margin-left: auto;
-margin-right: auto;
-}
-
-
 
 .hero-title {
         font-weight: 700;
@@ -264,10 +257,12 @@ margin-right: auto;
         text-align: center;
         color: var(--btn-text-color-active);
         margin-bottom: 48px;
-        
-        
+        width: 496px;
+        margin-left: auto;
+        margin-right: auto;
 }
-
+        
+        
 .hero-button {
         padding-top: 16px;
         padding-bottom: 16px;
@@ -297,16 +292,14 @@ margin-right: auto;
 /* ------------------------------SECTION 2 -------------------------- */
 
 
-.about {padding-top: 130px;
+.about {padding-top: 120px;
 }
 
 .features {}
 
 
 .features-list {
-        display: flex;
-        justify-content: space-between;
-      
+        display: flex;      
 }
 
 
@@ -316,7 +309,6 @@ margin-right: auto;
 }
 .features-list-item{
         width: 264px;
-        height: 104px;
 }
 
 .about-title {
@@ -344,7 +336,6 @@ margin-right: auto;
 
 
 .development {
-        padding-top: 110px;
 
 }
 
@@ -401,12 +392,9 @@ margin-right: auto;
 
 }
 .team-containt-wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding-top: 32px;
         padding-bottom: 32px;
+        text-align: center;
         
 }
 
@@ -419,6 +407,7 @@ margin-right: auto;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: var(--main-text-color);
+        margin-bottom: 8px;
 }
 
 .after-team-title {
@@ -436,6 +425,7 @@ margin-right: auto;
 }
 
 .navi-logo-footer {
+        font-family: Raleway;
         display: inline-block;
         margin-bottom: 16px;
         font-weight: 800;
@@ -451,4 +441,5 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #E7E9FC;
+width: 264px;
 }
